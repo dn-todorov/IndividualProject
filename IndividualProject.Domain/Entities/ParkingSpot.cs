@@ -4,5 +4,6 @@
     {
         public int ParkingSpotID { get; set; }
         public string SpotName { get; set; }
+        public ICollection<Track> Tracks { get; set; } = new List<Track>();
     }
 }

@@ -6,6 +6,6 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Team Team { get; set; }
-        public Icollection<Track> Tracks { get; set; } = new List<Track>();
+        public ICollection<Track> Tracks { get; set; } = new List<Track>();
     }
 }

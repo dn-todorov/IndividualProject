@@ -8,8 +8,8 @@
         public TimeOnly ParkingDepartureTime { get; set; }
         public string Note { get; set; }
         public Employee Employee { get; set; }
-        public ICollection<OfficeRoom> OfficeRooms { get; set; } = new List<OfficeRoom>();
-        public ICollection<Car> Cars { get; set; } = new List<Car>();
-        public ICollection<ParkingSpot> ParkingSpots { get; set; } = new List<ParkingSpot>();
+        public OfficeRoom OfficeRoom { get; set; }
+        public Car Car { get; set; }
+        public ParkingSpot ParkingSpot { get; set; }
     }
 }
