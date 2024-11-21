@@ -4408,6 +4408,19 @@
           "bin/placeholder/IndividualProject.Application.dll": {}
         }
       },
+      "IndividualProject.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IndividualProject.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IndividualProject.Common.dll": {}
+        }
+      },
       "IndividualProject.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4423,6 +4436,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "IndividualProject.Application": "1.0.0",
+          "IndividualProject.Common": "1.0.0",
           "IndividualProject.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
@@ -12286,6 +12300,11 @@
       "type": "project",
       "path": "../IndividualProject.Application/IndividualProject.Application.csproj",
       "msbuildProject": "../IndividualProject.Application/IndividualProject.Application.csproj"
+    },
+    "IndividualProject.Common/1.0.0": {
+      "type": "project",
+      "path": "../IndividualProject.Common/IndividualProject.Common.csproj",
+      "msbuildProject": "../IndividualProject.Common/IndividualProject.Common.csproj"
     },
     "IndividualProject.Domain/1.0.0": {
       "type": "project",

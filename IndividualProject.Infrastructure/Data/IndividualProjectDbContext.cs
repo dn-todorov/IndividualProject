@@ -1,15 +1,15 @@
-﻿using IndividualProject.Domain.Entities;
+﻿using IndividualProject.Common.Helpers;
+using IndividualProject.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace IndividualProject.Infrastructure.Data
 {
     public class IndividualProjectDbContext : DbContext
     {
-        //check the comments, add database validation to some fields
+        //check the comments, add database validation to some fields(eg. Registration Plates)
         public IndividualProjectDbContext(DbContextOptions<IndividualProjectDbContext> options) : base(options)
-        {
+        { }
 
-        }
         public DbSet<Car> Cars { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<OfficeRoom> OfficeRooms { get; set; }
@@ -17,6 +17,17 @@ namespace IndividualProject.Infrastructure.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Track> Tracks { get; set; }
 
+        protected override void ConfigureConventions(ModelConfigurationBuilder builder)
+        {
+            base.ConfigureConventions(builder);
+
+            builder.Properties<DateOnly>()
+                .HaveConversion<DateOnlyConverter, DateOnlyComparer>()
+                .HaveColumnType("date");
+
+            builder.Properties<TimeOnly>()
+                .HaveConversion<TimeOnlyConverter, TimeOnlyComparer>();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
