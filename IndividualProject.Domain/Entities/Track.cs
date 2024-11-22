@@ -1,8 +1,7 @@
 ﻿namespace IndividualProject.Domain.Entities
 {
-    public class Track
+    public class Track : BaseEntity
     {
-        public int TrackID { get; set; }
         public DateOnly OccupationDate { get; set; }
         public TimeOnly ParkingArrivalTime { get; set; }
         public TimeOnly ParkingDepartureTime { get; set; }

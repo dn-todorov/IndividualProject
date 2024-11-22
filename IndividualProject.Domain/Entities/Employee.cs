@@ -1,8 +1,7 @@
 ﻿namespace IndividualProject.Domain.Entities
 {
-    public class Employee
+    public class Employee : BaseEntity
     {
-        public int EmployeeID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int TeamID { get; set; }

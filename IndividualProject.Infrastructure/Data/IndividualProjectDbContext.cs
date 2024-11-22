@@ -35,16 +35,12 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(Team));
 
-                entity.HasKey(e => e.TeamID);
-
                 //entity.Property(e => e.TeamName).IsRequired();
             });
 
             modelBuilder.Entity<Car>(entity =>
             {
                 entity.ToTable(nameof(Car));
-
-                entity.HasKey(e => e.CarID);
 
                 //entity.Property(e => e.CarBrand).IsRequired();
             });
@@ -53,8 +49,6 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(OfficeRoom));
 
-                entity.HasKey(e => e.OfficeRoomID);
-
                 //entity.Property(e => e.RoomName).IsRequired();
             });
 
@@ -62,16 +56,12 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(ParkingSpot));
 
-                entity.HasKey(e => e.ParkingSpotID);
-
                 //entity.Property(e => e.SpotName).IsRequired();
             });
 
             modelBuilder.Entity<Employee>(entity =>
             {
                 entity.ToTable(nameof(Employee));
-
-                entity.HasKey(e => e.EmployeeID);
 
                 //entity.Property(e => e.FirstName).IsRequired();
                 //entity.Property(e => e.LastName).IsRequired();
@@ -81,8 +71,6 @@ namespace IndividualProject.Infrastructure.Data
             modelBuilder.Entity<Track>(entity =>
             {
                 entity.ToTable(nameof(Track));
-
-                entity.HasKey(e => e.TrackID);
 
                 //entity.Property(e => e.OccupationDate).IsRequired();
 
