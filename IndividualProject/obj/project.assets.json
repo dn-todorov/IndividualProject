@@ -12321,6 +12321,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "IndividualProject.Application >= 1.0.0",
+      "IndividualProject.Common >= 1.0.0",
       "IndividualProject.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
@@ -12365,6 +12366,9 @@
           "projectReferences": {
             "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\IndividualProject.Application.csproj": {
               "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\IndividualProject.Application.csproj"
+            },
+            "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\IndividualProject.Common.csproj": {
+              "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\IndividualProject.Common.csproj"
             },
             "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj"
