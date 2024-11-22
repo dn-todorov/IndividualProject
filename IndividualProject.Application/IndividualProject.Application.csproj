@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IndividualProject.Common\IndividualProject.Common.csproj" />
     <ProjectReference Include="..\IndividualProject.Domain\IndividualProject.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Dtos\" />
     <Folder Include="Services\" />
   </ItemGroup>
