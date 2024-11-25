@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\errortype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\errortype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17850531-B549-43A2-ACC9-4AC08C903029}|IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.infrastructure\\data\\individualprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17850531-B549-43A2-ACC9-4AC08C903029}|IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj|solutionrelative:individualproject.infrastructure\\data\\individualprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,106 +62,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResultT.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultT.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\ResultT.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultT.cs",
-              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\ResultT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:50:42.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResultExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultExtensions.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\ResultExtensions.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultExtensions.cs",
-              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\ResultExtensions.cs",
+              "DocumentIndex": 0,
+              "Title": "20241125152124_data-seeding.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs",
+              "RelativeToolTip": "IndividualProject.Infrastructure\\Migrations\\20241125152124_data-seeding.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:50:41.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\Result.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\Result.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\Result.cs",
-              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:50:38.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ErrorType.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ErrorType.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\ErrorType.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ErrorType.cs",
-              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\ErrorType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:50:37.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Error.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\Error.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\Error.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\Error.cs",
-              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\Error.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:50:30.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TeamService.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\TeamService.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
-              "RelativeToolTip": "IndividualProject.Application\\Services\\TeamService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:42:52.097Z",
+              "WhenOpened": "2024-11-25T15:21:24.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TeamController.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\TeamController.cs",
-              "RelativeDocumentMoniker": "IndividualProject\\Controllers\\TeamController.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\TeamController.cs",
-              "RelativeToolTip": "IndividualProject\\Controllers\\TeamController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Title": "IndividualProjectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "RelativeToolTip": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:41:33.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "IndividualProject\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "IndividualProject\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T13:53:33.973Z",
+              "WhenOpened": "2024-11-25T14:26:09.65Z",
               "EditorCaption": ""
             }
           ]
