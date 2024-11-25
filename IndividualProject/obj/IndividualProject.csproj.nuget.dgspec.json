@@ -37,6 +37,9 @@
               },
               "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\IndividualProject.Domain.csproj": {
                 "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\IndividualProject.Domain.csproj"
+              },
+              "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj"
               }
             }
           }
@@ -250,9 +253,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\IndividualProject.Application.csproj": {
-                "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\IndividualProject.Application.csproj"
-              },
               "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\IndividualProject.Common.csproj": {
                 "projectPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\IndividualProject.Common.csproj"
               },

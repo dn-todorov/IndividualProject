@@ -14,11 +14,11 @@
   <ItemGroup>
     <ProjectReference Include="..\IndividualProject.Common\IndividualProject.Common.csproj" />
     <ProjectReference Include="..\IndividualProject.Domain\IndividualProject.Domain.csproj" />
+    <ProjectReference Include="..\IndividualProject.Infrastructure\IndividualProject.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Dtos\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

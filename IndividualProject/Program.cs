@@ -1,4 +1,8 @@
+using IndividualProject.Application.Interfaces;
+using IndividualProject.Application.Services;
 using IndividualProject.Infrastructure.Data;
+using IndividualProject.Infrastructure.Interfaces;
+using IndividualProject.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,8 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<IndividualProjectDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<ITeamRepository, TeamRepository>();
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

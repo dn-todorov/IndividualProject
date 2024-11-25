@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IndividualProject.Application\IndividualProject.Application.csproj" />
     <ProjectReference Include="..\IndividualProject.Common\IndividualProject.Common.csproj" />
     <ProjectReference Include="..\IndividualProject.Domain\IndividualProject.Domain.csproj" />
   </ItemGroup>

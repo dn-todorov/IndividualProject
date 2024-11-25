@@ -4400,6 +4400,7 @@
           "AutoMapper": "13.0.1",
           "IndividualProject.Common": "1.0.0",
           "IndividualProject.Domain": "1.0.0",
+          "IndividualProject.Infrastructure": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0"
         },
         "compile": {
@@ -4436,7 +4437,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "IndividualProject.Application": "1.0.0",
           "IndividualProject.Common": "1.0.0",
           "IndividualProject.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
