@@ -37,7 +37,7 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(Team));
 
-                //entity.Property(e => e.TeamName).IsRequired();
+                entity.Property(e => e.TeamName).IsRequired();
 
                 entity.HasData(
                     new Team { Id = 1, TeamName = "BA" },
@@ -55,7 +55,8 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(Car));
 
-                //entity.Property(e => e.CarBrand).IsRequired();
+                entity.Property(e => e.CarBrand).IsRequired();
+                entity.Property(e => e.RegistrationPlate).IsRequired();
 
                 entity.HasData(
                     new Car { Id = 1, CarBrand = "Mercedes", RegistrationPlate = "СВ3728КА" },
@@ -74,7 +75,7 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(OfficeRoom));
 
-                //entity.Property(e => e.RoomName).IsRequired();
+                entity.Property(e => e.RoomName).IsRequired();
 
                 entity.HasData(
                     new OfficeRoom { Id = 2, RoomName = "Room 403" },
@@ -86,7 +87,7 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(ParkingSpot));
 
-                //entity.Property(e => e.SpotName).IsRequired();
+                entity.Property(e => e.SpotName).IsRequired();
 
                 entity.HasData(
                     new ParkingSpot { Id = 1, SpotName = "Parking spot 1" },
@@ -100,9 +101,9 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(Employee));
 
-                //entity.Property(e => e.FirstName).IsRequired();
-                //entity.Property(e => e.LastName).IsRequired();
-                //entity.Property(e => e.Team).IsRequired();
+                entity.Property(e => e.FirstName).IsRequired();
+                entity.Property(e => e.LastName).IsRequired();
+                entity.Property(e => e.TeamID).IsRequired();
 
                 entity.HasData(
                     new Employee { Id = 1, FirstName = "Петър", LastName = "Петров", TeamID = 1, CarID = 1 },
@@ -125,15 +126,16 @@ namespace IndividualProject.Infrastructure.Data
             {
                 entity.ToTable(nameof(Track));
 
-                //entity.Property(e => e.OccupationDate).IsRequired();
+                entity.Property(e => e.OccupationDate).IsRequired();
 
+                //TODO
                 //These two might be wrong to exist. Not all employees might go with cars.
                 //entity.Property(e => e.ParkingArrivalTime).IsRequired();
                 //entity.Property(e => e.ParkingDepartureTime).IsRequired();
 
-                //entity.Property(e => e.Employee).IsRequired();
+                entity.Property(e => e.EmployeeID).IsRequired();
 
-                //entity.Property(e => e.OfficeRooms).IsRequired();
+                entity.Property(e => e.OfficeRoomID).IsRequired();
 
                 entity.HasData(
                     new Track
