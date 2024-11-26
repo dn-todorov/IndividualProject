@@ -22,5 +22,13 @@ namespace IndividualProject.Controllers
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> Search([FromQuery] string querry)
+        {
+            var result = await trackService.SearchAsync(querry);
+
+            return result.Match(onSuccess: Ok, onFailure: Problem);
+        }
     }
 }

@@ -29,6 +29,25 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
+        //TODO
+        //Add queery checking
+        public async Task<ResultT<IEnumerable<TracksResponseModel>>> SearchAsync(string querry)
+        {
+            var result = await _trackrepository
+                .GetAllAsync(x => x.Include(x => x.Employee)
+                .ThenInclude(x => x.Team)
+                .Include(x => x.OfficeRoom)
+                .Include(x => x.ParkingSpot));
+
+            var mappedToList = _mapper.Map<IEnumerable<TracksResponseModel>>(result.ToList());
+
+            var querryed = mappedToList
+                .Where(x => x.Employee.FirstName.Contains(querry, StringComparison.OrdinalIgnoreCase)
+                || x.Employee.LastName.Contains(querry, StringComparison.OrdinalIgnoreCase)
+                || x.Employee.Team.TeamName.Contains(querry, StringComparison.OrdinalIgnoreCase));
+            return ResultT<TracksResponseModel>.Success(querryed);
+        }
+
         public async Task<ResultT<IEnumerable<TracksResponseModel>>> GetAsync(CancellationToken ct)
         {
             var result = await _trackrepository
