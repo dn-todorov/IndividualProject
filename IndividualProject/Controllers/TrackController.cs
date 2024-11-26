@@ -35,5 +35,9 @@ namespace IndividualProject.Controllers
         [HttpPost("add")]
         public async Task Create([FromBody] TracksRequestModel model, CancellationToken ct)
             => await trackService.CreateOrUpdateAsync(null, model, ct);
+
+        [HttpPost("update")]
+        public async Task Update([FromRoute] int id, [FromBody] TracksRequestModel model, CancellationToken ct)
+            => await trackService.CreateOrUpdateAsync(id, model, ct);
     }
 }
