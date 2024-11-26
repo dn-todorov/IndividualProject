@@ -105,19 +105,19 @@ namespace IndividualProject.Infrastructure.Data
                 //entity.Property(e => e.Team).IsRequired();
 
                 entity.HasData(
-                    new Employee { Id = 1, FirstName = "Петър", LastName = "Петров", TeamID = 1 },
-                    new Employee { Id = 2, FirstName = "Георги", LastName = "Георгиев", TeamID = 2 },
-                    new Employee { Id = 3, FirstName = "Димитър", LastName = "Димитров", TeamID = 3 },
-                    new Employee { Id = 4, FirstName = "Иван", LastName = "Иванов", TeamID = 4 },
-                    new Employee { Id = 5, FirstName = "Михаела", LastName = "Милева", TeamID = 5 },
-                    new Employee { Id = 6, FirstName = "Диан", LastName = "Дичев", TeamID = 6 },
-                    new Employee { Id = 7, FirstName = "Пенчо", LastName = "Пенчев", TeamID = 7 },
-                    new Employee { Id = 8, FirstName = "Даниела", LastName = "Димитрова", TeamID = 8 },
-                    new Employee { Id = 9, FirstName = "Николай", LastName = "Калайджиев", TeamID = 1 },
-                    new Employee { Id = 10, FirstName = "Иво", LastName = "Иванов", TeamID = 7 },
-                    new Employee { Id = 11, FirstName = "Елена", LastName = "Парнарева", TeamID = 3 },
-                    new Employee { Id = 12, FirstName = "Деница", LastName = "Георгиева", TeamID = 5 },
-                    new Employee { Id = 13, FirstName = "Ясен", LastName = "Николов", TeamID = 4 }
+                    new Employee { Id = 1, FirstName = "Петър", LastName = "Петров", TeamID = 1, CarID = 1 },
+                    new Employee { Id = 2, FirstName = "Георги", LastName = "Георгиев", TeamID = 2, CarID = 2 },
+                    new Employee { Id = 3, FirstName = "Димитър", LastName = "Димитров", TeamID = 3, CarID = 3 },
+                    new Employee { Id = 4, FirstName = "Иван", LastName = "Иванов", TeamID = 4, CarID = 4 },
+                    new Employee { Id = 5, FirstName = "Михаела", LastName = "Милева", TeamID = 5, CarID = 5 },
+                    new Employee { Id = 6, FirstName = "Диан", LastName = "Дичев", TeamID = 6, CarID = 6 },
+                    new Employee { Id = 7, FirstName = "Пенчо", LastName = "Пенчев", TeamID = 7, CarID = 7 },
+                    new Employee { Id = 8, FirstName = "Даниела", LastName = "Димитрова", TeamID = 8, CarID = 8 },
+                    new Employee { Id = 9, FirstName = "Николай", LastName = "Калайджиев", TeamID = 1, CarID = 9 },
+                    new Employee { Id = 10, FirstName = "Иво", LastName = "Иванов", TeamID = 7, CarID = null },
+                    new Employee { Id = 11, FirstName = "Елена", LastName = "Парнарева", TeamID = 3, CarID = null },
+                    new Employee { Id = 12, FirstName = "Деница", LastName = "Георгиева", TeamID = 5, CarID = null },
+                    new Employee { Id = 13, FirstName = "Ясен", LastName = "Николов", TeamID = 4, CarID = null }
                     );
             });
 
@@ -145,7 +145,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = null,
                         EmployeeID = 3,
                         OfficeRoomID = 2,
-                        CarID = 4,
                         ParkingSpotID = 2
                     },
                     new Track
@@ -157,7 +156,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = "Тест тест тест",
                         EmployeeID = 6,
                         OfficeRoomID = 1,
-                        CarID = 6,
                         ParkingSpotID = 4
                     },
                     new Track
@@ -169,7 +167,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = "Lorem ipsum",
                         EmployeeID = 5,
                         OfficeRoomID = 1,
-                        CarID = 7,
                         ParkingSpotID = 1
                     },
                     new Track
@@ -181,7 +178,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = "Напиши бележка тук",
                         EmployeeID = 2,
                         OfficeRoomID = 2,
-                        CarID = 4,
                         ParkingSpotID = 3
                     },
                     new Track
@@ -193,7 +189,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = null,
                         EmployeeID = 4,
                         OfficeRoomID = 2,
-                        CarID = 6,
                         ParkingSpotID = 2
                     },
                     new Track
@@ -205,7 +200,6 @@ namespace IndividualProject.Infrastructure.Data
                         Note = null,
                         EmployeeID = 2,
                         OfficeRoomID = 1,
-                        CarID = null,
                         ParkingSpotID = 2
                     },
                     new Track
@@ -217,12 +211,10 @@ namespace IndividualProject.Infrastructure.Data
                         Note = "Please leave a note",
                         EmployeeID = 6,
                         OfficeRoomID = 1,
-                        CarID = 8,
                         ParkingSpotID = 4
                     }
                     );
             });
-
         }
     }
 }

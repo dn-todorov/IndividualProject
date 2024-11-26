@@ -1,12 +1,21 @@
-﻿namespace IndividualProject.Infrastructure.Interfaces
+﻿using System.Linq.Expressions;
+
+namespace IndividualProject.Infrastructure.Interfaces
 {
     public interface IRepository<TEntity>
         where TEntity : class
     {
-        Task<TEntity> GetByIdAsync(int id);
-        Task<IEnumerable<TEntity>> GetAllAsync();
+        Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
+                    Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        Task<TEntity> GetAsync(int id, Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        Task<IEnumerable<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        Task<IQueryable<TEntity>> GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
         Task AddAsync(TEntity entity);
-        Task UpdateAsync(TEntity entity);
-        Task DeleteAsync(int id);
+        Task DeleteAsync(TEntity entity);
+        int Save();
+        Task<int> SaveAsync();
+        void Update(TEntity entity);
+        IQueryable<TEntity> Include(Func<IQueryable<TEntity>, IQueryable<TEntity>> expression);
     }
 }

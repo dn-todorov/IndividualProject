@@ -3,16 +3,15 @@ using IndividualProject.Common.ResultPattern;
 using IndividualProject.Domain.Entities;
 using IndividualProject.Infrastructure.Interfaces;
 
-
 namespace IndividualProject.Application.Services
 {
-    public class TeamService : ITeamService
+    public class TrackService : ITrackService
     {
-        private readonly ITeamRepository _teamRepository;
+        private readonly ITrackRepository _trackrepository;
 
-        public TeamService(ITeamRepository teamRepository)
+        public TrackService(ITrackRepository trackRepository)
         {
-            _teamRepository = teamRepository;
+            _trackrepository = trackRepository;
         }
 
         public Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct)
@@ -25,19 +24,19 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<ResultT<IEnumerable<Team>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<Track>>> GetAsync(CancellationToken ct)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<ResultT<Team>> GetByIdAsync(int id, CancellationToken ct)
+        public async Task<ResultT<Track>> GetByIdAsync(int id, CancellationToken ct)
         {
-            //var team = await _teamRepository.GetByIdAsync(id);
+            //var track = await _trackrepository.GetByIdAsync(id);
 
-            //if (team == null)
+            //if (track == null)
             //    return ConfigurationErrors.NotFound(id.ToString());
 
-            //return ResultT<Team>.Success(team);
+            //return ResultT<Track>.Success(track);
             throw new NotImplementedException();
         }
 

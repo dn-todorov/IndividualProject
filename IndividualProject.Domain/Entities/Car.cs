@@ -4,6 +4,6 @@
     {
         public string CarBrand { get; set; }
         public string RegistrationPlate { get; set; }
-        public ICollection<Track> Tracks { get; set; } = new List<Track>();
+        public Employee Employee { get; set; }
     }
 }

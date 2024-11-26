@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\trackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\trackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17850531-B549-43A2-ACC9-4AC08C903029}|IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.infrastructure\\data\\individualprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17850531-B549-43A2-ACC9-4AC08C903029}|IndividualProject.Infrastructure\\IndividualProject.Infrastructure.csproj|solutionrelative:individualproject.infrastructure\\data\\individualprojectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|solutionrelative:individualproject.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.domain\\entities\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|solutionrelative:individualproject.domain\\entities\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.domain\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|solutionrelative:individualproject.domain\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|solutionrelative:individualproject.domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +38,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrackService.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TrackService.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\TrackService.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TrackService.cs",
+              "RelativeToolTip": "IndividualProject.Application\\Services\\TrackService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAywCcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:55:06.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "IndividualProject.Application\\Services\\TeamService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAywCgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:54:53.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndividualProjectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "RelativeToolTip": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAYwNQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:50:24.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Team.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Domain\\Entities\\Team.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Team.cs",
+              "RelativeToolTip": "IndividualProject.Domain\\Entities\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:46:21.669Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -58,15 +134,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IndividualProjectDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
-              "RelativeToolTip": "IndividualProject.Infrastructure\\Data\\IndividualProjectDbContext.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Domain\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "IndividualProject.Domain\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T14:26:09.65Z",
+              "WhenOpened": "2024-11-26T09:47:59.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Car.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Domain\\Entities\\Car.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Car.cs",
+              "RelativeToolTip": "IndividualProject.Domain\\Entities\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:47:49.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Track.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Track.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Domain\\Entities\\Track.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Track.cs",
+              "RelativeToolTip": "IndividualProject.Domain\\Entities\\Track.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:46:22.098Z",
               "EditorCaption": ""
             }
           ]

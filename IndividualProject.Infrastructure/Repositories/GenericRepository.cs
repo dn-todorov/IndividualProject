@@ -2,6 +2,7 @@
 using IndividualProject.Infrastructure.Data;
 using IndividualProject.Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace IndividualProject.Infrastructure.Repositories
 {
@@ -23,31 +24,80 @@ namespace IndividualProject.Infrastructure.Repositories
             await context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(int id)
+        public virtual async Task DeleteAsync(TEntity entity)
         {
-            var entity = await dbSet.FindAsync(id);
+            this.dbSet.Remove(entity);
+            await Task.CompletedTask;
+        }
+
+        public virtual async Task<IEnumerable<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var result = Include(include).Select(selector).ToList();
+
+            return await Task.FromResult(result);
+        }
+
+        public virtual async Task<IQueryable<TEntity>> GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var result = Include(include);
+
+            return await Task.FromResult(result);
+        }
+
+        public virtual async Task<TEntity> GetAsync(int id, Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var entity = await Include(include).Where(x => x.Id == id).FirstOrDefaultAsync().ConfigureAwait(false);
 
             if (entity != null)
             {
-                dbSet.Remove(entity);
-                await context.SaveChangesAsync();
+                this.context.Entry(entity).State = EntityState.Detached;
+
+                return entity;
             }
+
+            return null;
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public virtual async Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
         {
-            return await dbSet.ToListAsync();
+            var entity = await Include(include)
+                .Where(x => x.Id == id)
+                .Select(selector)
+                .FirstOrDefaultAsync()
+                .ConfigureAwait(false);
+
+            return entity;
         }
 
-        public async Task<TEntity> GetByIdAsync(int id)
+        public virtual void Update(TEntity entity)
         {
-            return await dbSet.FindAsync(id);
+            entity = entity ?? throw new ArgumentNullException(nameof(entity));
+
+            this.context.Entry(entity).State = EntityState.Modified;
         }
 
-        public async Task UpdateAsync(TEntity entity)
+        public virtual int Save()
         {
-            dbSet.Update(entity);
-            await context.SaveChangesAsync();
+            return this.context.SaveChanges();
+        }
+
+        public virtual async Task<int> SaveAsync()
+        {
+            return await this.context.SaveChangesAsync().ConfigureAwait(false);
+        }
+
+        public virtual IQueryable<TEntity> Include(Func<IQueryable<TEntity>, IQueryable<TEntity>> expression)
+        {
+            IQueryable<TEntity> queryable = this.dbSet.AsNoTracking();
+
+            if (expression != null)
+            {
+                queryable = expression(queryable);
+            }
+
+            return queryable;
         }
     }
 }

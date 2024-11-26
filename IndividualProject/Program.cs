@@ -11,12 +11,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<IndividualProjectDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); options.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    //TODO
+    options.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
 });
 
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<ITrackService, TrackService>();
+builder.Services.AddScoped<ITrackRepository, TrackRepository>();
 builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
 

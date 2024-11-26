@@ -291,6 +291,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "SimpleInjector": {
+              "target": "Package",
+              "version": "[5.5.0, )"
             }
           },
           "imports": [
