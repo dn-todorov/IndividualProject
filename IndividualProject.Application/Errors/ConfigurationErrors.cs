@@ -3,7 +3,7 @@
 namespace IndividualProject.Errors
 {
     //TODO
-    //PLACEHOLDER ERROR CONFIGURATION REPLACE ASAP
+    //DELETE IN THE FUTURE(USED ONLY FOR TESTING THE TEAM SERVICE)
     public static class ConfigurationErrors
     {
         public static Error NotFound(string id) =>

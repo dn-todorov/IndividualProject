@@ -1,4 +1,5 @@
-﻿using IndividualProject.Common.ResultPattern;
+﻿using IndividualProject.Application.Dtos.Teams;
+using IndividualProject.Common.ResultPattern;
 using IndividualProject.Domain.Entities;
 
 namespace IndividualProject.Application.Interfaces
@@ -7,7 +8,7 @@ namespace IndividualProject.Application.Interfaces
     {
         Task<ResultT<IEnumerable<Team>>> GetAsync(CancellationToken ct);
 
-        Task<ResultT<Team>> GetByIdAsync(int id, CancellationToken ct);
+        Task<ResultT<TeamResponseModel>> GetByIdAsync(int id, CancellationToken ct);
 
         Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct);
 

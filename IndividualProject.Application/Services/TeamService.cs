@@ -1,6 +1,9 @@
-﻿using IndividualProject.Application.Interfaces;
+﻿using AutoMapper;
+using IndividualProject.Application.Dtos.Teams;
+using IndividualProject.Application.Interfaces;
 using IndividualProject.Common.ResultPattern;
 using IndividualProject.Domain.Entities;
+using IndividualProject.Errors;
 using IndividualProject.Infrastructure.Interfaces;
 
 
@@ -9,10 +12,12 @@ namespace IndividualProject.Application.Services
     public class TeamService : ITeamService
     {
         private readonly ITeamRepository _teamRepository;
+        private readonly IMapper _mapper;
 
-        public TeamService(ITeamRepository teamRepository)
+        public TeamService(ITeamRepository teamRepository, IMapper mapper)
         {
             _teamRepository = teamRepository;
+            _mapper = mapper;
         }
 
         public Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct)
@@ -30,15 +35,16 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
-        public async Task<ResultT<Team>> GetByIdAsync(int id, CancellationToken ct)
+        public async Task<ResultT<TeamResponseModel>> GetByIdAsync(int id, CancellationToken ct)
         {
-            //var team = await _teamRepository.GetByIdAsync(id);
+            var team = await _teamRepository.GetAsync(id);
 
-            //if (team == null)
-            //    return ConfigurationErrors.NotFound(id.ToString());
+            if (team == null)
+                return ConfigurationErrors.NotFound(id.ToString());
 
-            //return ResultT<Team>.Success(team);
-            throw new NotImplementedException();
+            var temp = _mapper.Map<TeamResponseModel>(team);
+
+            return ResultT<TeamResponseModel>.Success(temp);
         }
 
         public Task<Result> UpdateAsync(int id, Team request, CancellationToken ct)
