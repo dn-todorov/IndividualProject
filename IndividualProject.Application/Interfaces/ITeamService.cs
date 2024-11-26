@@ -6,7 +6,7 @@ namespace IndividualProject.Application.Interfaces
 {
     public interface ITeamService
     {
-        Task<ResultT<IEnumerable<Team>>> GetAsync(CancellationToken ct);
+        Task<ResultT<IEnumerable<TeamResponseModel>>> GetAsync(CancellationToken ct);
 
         Task<ResultT<TeamResponseModel>> GetByIdAsync(int id, CancellationToken ct);
 

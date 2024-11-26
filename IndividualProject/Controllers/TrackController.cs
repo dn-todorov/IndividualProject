@@ -14,5 +14,13 @@ namespace IndividualProject.Controllers
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync(CancellationToken ct)
+        {
+            var result = await trackService.GetAsync(ct);
+
+            return result.Match(onSuccess: Ok, onFailure: Problem);
+        }
     }
 }

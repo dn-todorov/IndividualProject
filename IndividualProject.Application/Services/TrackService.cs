@@ -29,9 +29,16 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
-        public async Task<ResultT<IEnumerable<Track>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<TracksResponseModel>>> GetAsync(CancellationToken ct)
         {
-            throw new NotImplementedException();
+            var result = await _trackrepository
+                .GetAllAsync(x => x.Include(x => x.Employee)
+                .ThenInclude(x => x.Team)
+                .Include(x => x.OfficeRoom)
+                .Include(x => x.ParkingSpot));
+
+            var temp = _mapper.Map<IEnumerable<TracksResponseModel>>(result.ToList());
+            return ResultT<TracksResponseModel>.Success(temp);
         }
 
         public async Task<ResultT<TracksResponseModel>> GetByIdAsync(int id, CancellationToken ct)

@@ -26,6 +26,9 @@
         public static ResultT<TValue> Success(TValue value) =>
             new(value);
 
+        public static ResultT<IEnumerable<TValue>> Success(IEnumerable<TValue> values) =>
+            new(values);
+
         public static new ResultT<TValue> Failure(Error error) =>
             new(error);
     }

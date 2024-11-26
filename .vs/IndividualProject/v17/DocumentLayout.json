@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\trackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\trackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\trackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.common\\resultpattern\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}|IndividualProject.Common\\IndividualProject.Common.csproj|solutionrelative:individualproject.common\\resultpattern\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\dtos\\teams\\teamresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\dtos\\teams\\teamresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02499708-8507-4158-A602-74DC84BA85C6}|IndividualProject.Domain\\IndividualProject.Domain.csproj|solutionrelative:individualproject.domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36219C99-767D-46D9-B29C-82B501FE0C43}|IndividualProject.Application\\IndividualProject.Application.csproj|solutionrelative:individualproject.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|c:\\users\\danieltodorov\\desktop\\individual project\\individualproject\\individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA782166-51CA-4A8A-87FC-500250A48B39}|IndividualProject\\IndividualProject.csproj|solutionrelative:individualproject\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,98 +78,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TrackController.cs",
               "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\TrackController.cs",
               "RelativeDocumentMoniker": "IndividualProject\\Controllers\\TrackController.cs",
               "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\TrackController.cs",
               "RelativeToolTip": "IndividualProject\\Controllers\\TrackController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:05:28.596Z",
+              "WhenOpened": "2024-11-26T13:14:16.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "IndividualProject\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "IndividualProject\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:05:19.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\AutoMapperProfile.cs",
               "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\AutoMapperProfile.cs",
               "RelativeToolTip": "IndividualProject.Application\\Services\\AutoMapperProfile.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:59:30.094Z",
+              "WhenOpened": "2024-11-26T13:07:34.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrackService.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TrackService.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\TrackService.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TrackService.cs",
+              "RelativeToolTip": "IndividualProject.Application\\Services\\TrackService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:57:56.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultT.cs",
+              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultT.cs",
+              "RelativeDocumentMoniker": "IndividualProject.Common\\ResultPattern\\ResultT.cs",
+              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Common\\ResultPattern\\ResultT.cs",
+              "RelativeToolTip": "IndividualProject.Common\\ResultPattern\\ResultT.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowB0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:49:22.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Program.cs",
-              "RelativeDocumentMoniker": "IndividualProject\\Program.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Program.cs",
-              "RelativeToolTip": "IndividualProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:59:11.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeamResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Dtos\\Teams\\TeamResponseModel.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Application\\Dtos\\Teams\\TeamResponseModel.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Dtos\\Teams\\TeamResponseModel.cs",
-              "RelativeToolTip": "IndividualProject.Application\\Dtos\\Teams\\TeamResponseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:58:14.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Team.cs",
-              "RelativeDocumentMoniker": "IndividualProject.Domain\\Entities\\Team.cs",
-              "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Domain\\Entities\\Team.cs",
-              "RelativeToolTip": "IndividualProject.Domain\\Entities\\Team.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T11:58:11.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "TeamService.cs",
               "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
               "RelativeDocumentMoniker": "IndividualProject.Application\\Services\\TeamService.cs",
               "ToolTip": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject.Application\\Services\\TeamService.cs",
               "RelativeToolTip": "IndividualProject.Application\\Services\\TeamService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCoAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwCYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T11:42:50.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TeamController.cs",
               "DocumentMoniker": "C:\\Users\\DanielTodorov\\Desktop\\Individual Project\\IndividualProject\\IndividualProject\\Controllers\\TeamController.cs",
               "RelativeDocumentMoniker": "IndividualProject\\Controllers\\TeamController.cs",

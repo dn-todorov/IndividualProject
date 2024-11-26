@@ -30,8 +30,12 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<ResultT<IEnumerable<Team>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<TeamResponseModel>>> GetAsync(CancellationToken ct)
         {
+            //var teams = await _teamRepository.GetAllAsync();
+            //var temp = _mapper.Map<TeamResponseModel>(teams);
+
+            //return ResultT<TeamResponseModel>.Success(temp);
             throw new NotImplementedException();
         }
 
