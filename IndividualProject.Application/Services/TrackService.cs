@@ -73,9 +73,33 @@ namespace IndividualProject.Application.Services
             return ResultT<TracksResponseModel>.Success(temp);
         }
 
-        public Task<Result> UpdateAsync(int id, Team request, CancellationToken ct)
+        //Fix The Request Model Adds all data again
+        public async Task CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct)
         {
-            throw new NotImplementedException();
+            Track entity = null;
+
+            if (id != null)
+            {
+                entity = await _trackrepository
+                    .GetAsync(id.Value
+                    , x => x.Include(x => x.Employee)
+                    .ThenInclude(x => x.Team)
+                    .Include(x => x.OfficeRoom)
+                    .Include(x => x.ParkingSpot));
+            }
+
+            entity = _mapper.Map<Track>(model);
+
+            if (entity?.Id == null)
+            {
+                _trackrepository.Update(entity);
+            }
+            else
+            {
+                await _trackrepository.AddAsync(entity);
+            }
+
+            await _trackrepository.SaveAsync();
         }
     }
 }

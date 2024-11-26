@@ -1,4 +1,5 @@
-﻿using IndividualProject.Application.Interfaces;
+﻿using IndividualProject.Application.Dtos.Tracks;
+using IndividualProject.Application.Interfaces;
 using IndividualProject.Common.ResultPattern;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,5 +31,9 @@ namespace IndividualProject.Controllers
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
+
+        [HttpPost("add")]
+        public async Task Create([FromBody] TracksRequestModel model, CancellationToken ct)
+            => await trackService.CreateOrUpdateAsync(null, model, ct);
     }
 }

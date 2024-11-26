@@ -20,8 +20,12 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
 builder.Services.AddScoped<ITrackService, TrackService>();
 builder.Services.AddScoped<ITrackRepository, TrackRepository>();
+
 builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
 

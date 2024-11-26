@@ -5,8 +5,8 @@ namespace IndividualProject.Infrastructure.Interfaces
     public interface IRepository<TEntity>
         where TEntity : class
     {
-        Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
-                    Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        //Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
+        //            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
         Task<TEntity> GetAsync(int id, Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
         Task<IEnumerable<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
             Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
