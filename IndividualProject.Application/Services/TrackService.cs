@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using IndividualProject.Application.Dtos.Tracks;
+using IndividualProject.Application.Errors;
 using IndividualProject.Application.Interfaces;
 using IndividualProject.Common.ResultPattern;
 using IndividualProject.Domain.Entities;
@@ -17,16 +18,6 @@ namespace IndividualProject.Application.Services
         {
             _trackrepository = trackRepository;
             _mapper = mapper;
-        }
-
-        public Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Result> DeleteAsync(int id, CancellationToken ct)
-        {
-            throw new NotImplementedException();
         }
 
         //TODO
@@ -81,14 +72,10 @@ namespace IndividualProject.Application.Services
             if (id != null)
             {
                 entity = await _trackrepository
-                    .GetAsync(id.Value
-                    , x => x.Include(x => x.Employee)
-                    .ThenInclude(x => x.Team)
-                    .Include(x => x.OfficeRoom)
-                    .Include(x => x.ParkingSpot));
+                    .FindAsync(x => x.Id == id);
             }
 
-            entity = _mapper.Map<Track>(model);
+            //entity = _mapper.Map<Track>(model);
 
             if (entity?.Id == null)
             {
@@ -100,6 +87,28 @@ namespace IndividualProject.Application.Services
             }
 
             await _trackrepository.SaveAsync();
+        }
+
+        public async Task<Result> DeleteAsync(int id, CancellationToken ct)
+        {
+            if (id == null)
+            {
+                return TrackingErrors.NotFound(id.ToString());
+            }
+
+            var result = await _trackrepository.FindAsync(x => x.Id == id);
+
+            if (result != null)
+            {
+                await _trackrepository.DeleteAsync(result);
+                await _trackrepository.SaveAsync();
+            }
+            else
+            {
+                return TrackingErrors.NotFound(id.ToString());
+            }
+
+            return Result.Success();
         }
     }
 }

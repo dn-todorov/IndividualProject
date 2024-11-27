@@ -59,17 +59,17 @@ namespace IndividualProject.Infrastructure.Repositories
             return null;
         }
 
-        //public virtual async Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
-        //    Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
-        //{
-        //    var entity = await Include(include)
-        //        .Where(x => x.Id == id)
-        //        .Select(selector)
-        //        .FirstOrDefaultAsync()
-        //        .ConfigureAwait(false);
+        public virtual async Task<TResult> GetAsync<TResult>(int id, Expression<Func<TEntity, TResult>> selector,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var entity = await Include(include)
+                .Where(x => x.Id == id)
+                .Select(selector)
+                .FirstOrDefaultAsync()
+                .ConfigureAwait(false);
 
-        //    return entity;
-        //}
+            return entity;
+        }
 
         public virtual async Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match,
             Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)

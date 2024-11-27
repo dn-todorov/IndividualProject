@@ -35,10 +35,7 @@ namespace IndividualProject.Application.Services
                 .ForPath(x => x.Room, x => x.MapFrom(x => x.OfficeRoom))
                 .ReverseMap();
 
-            CreateMap<TracksRequestModel, Track>().ForPath(x => x.Employee, x => x.MapFrom(x => x.Employee))
-                .ForPath(x => x.ParkingSpot, x => x.MapFrom(x => x.ParkingSpot))
-                .ForPath(x => x.OfficeRoom, x => x.MapFrom(x => x.Room))
-                .ReverseMap();
+            CreateMap<TracksRequestModel, Track>().ReverseMap();
         }
     }
 }

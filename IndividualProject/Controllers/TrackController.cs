@@ -36,8 +36,16 @@ namespace IndividualProject.Controllers
         public async Task Create([FromBody] TracksRequestModel model, CancellationToken ct)
             => await trackService.CreateOrUpdateAsync(null, model, ct);
 
-        [HttpPost("update")]
+        [HttpPut("update")]
         public async Task Update([FromRoute] int id, [FromBody] TracksRequestModel model, CancellationToken ct)
             => await trackService.CreateOrUpdateAsync(id, model, ct);
+
+        [HttpDelete("delete{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id, CancellationToken ct)
+        {
+            var result = await trackService.DeleteAsync(id, ct);
+
+            return result.Match(onSuccess: Ok, onFailure: Problem);
+        }
     }
 }

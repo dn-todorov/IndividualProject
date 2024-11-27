@@ -1,16 +1,13 @@
-﻿using IndividualProject.Application.Dtos.Employees;
-using IndividualProject.Application.Dtos.ParkingSpots;
-using IndividualProject.Application.Dtos.Rooms;
-
-namespace IndividualProject.Application.Dtos.Tracks
+﻿namespace IndividualProject.Application.Dtos.Tracks
 {
     public class TracksRequestModel
     {
         public DateOnly OccupationDate { get; set; }
         public TimeOnly? ParkingArrivalTime { get; set; }
         public TimeOnly? ParkingDepartureTime { get; set; }
-        public RoomResponseModel Room { get; set; }
-        public EmployeeResponseModel Employee { get; set; }
-        public ParkingSpotResponseModel? ParkingSpot { get; set; }
+        public string Text { get; set; }
+        public int OfficeRoomID { get; set; }
+        public int EmployeeID { get; set; }
+        public int? ParkingSpotID { get; set; }
     }
 }
