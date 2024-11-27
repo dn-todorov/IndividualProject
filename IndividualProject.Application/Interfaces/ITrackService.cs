@@ -11,7 +11,7 @@ namespace IndividualProject.Application.Interfaces
 
         Task<ResultT<TracksResponseModel>> GetByIdAsync(int id, CancellationToken ct);
 
-        Task CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct);
+        Task<Result> CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct);
 
         Task<Result> DeleteAsync(int id, CancellationToken ct);
     }

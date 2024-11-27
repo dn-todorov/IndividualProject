@@ -33,12 +33,20 @@ namespace IndividualProject.Controllers
         }
 
         [HttpPost("add")]
-        public async Task Create([FromBody] TracksRequestModel model, CancellationToken ct)
-            => await trackService.CreateOrUpdateAsync(null, model, ct);
+        public async Task<IActionResult> Create([FromBody] TracksRequestModel model, CancellationToken ct)
+        {
+            var result = await trackService.CreateOrUpdateAsync(null, model, ct);
 
-        [HttpPut("update")]
-        public async Task Update([FromRoute] int id, [FromBody] TracksRequestModel model, CancellationToken ct)
-            => await trackService.CreateOrUpdateAsync(id, model, ct);
+            return result.Match(onSuccess: Ok, onFailure: Problem);
+        }
+
+        [HttpPut("update{id:int}")]
+        public async Task<IActionResult> Update([FromRoute] int? id, [FromBody] TracksRequestModel model, CancellationToken ct)
+        {
+            var result = await trackService.CreateOrUpdateAsync(id, model, ct);
+
+            return result.Match(onSuccess: Ok, onFailure: Problem);
+        }
 
         [HttpDelete("delete{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id, CancellationToken ct)

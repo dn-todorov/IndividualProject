@@ -65,7 +65,7 @@ namespace IndividualProject.Application.Services
         }
 
         //Fix The Request Model Adds all data again
-        public async Task CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct)
+        public async Task<Result> CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct)
         {
             Track entity = null;
 
@@ -73,11 +73,12 @@ namespace IndividualProject.Application.Services
             {
                 entity = await _trackrepository
                     .FindAsync(x => x.Id == id);
+                model.Id = (int)entity.Id;
             }
 
-            //entity = _mapper.Map<Track>(model);
+            entity = _mapper.Map<Track>(model);
 
-            if (entity?.Id == null)
+            if (entity?.Id != null && id != null)
             {
                 _trackrepository.Update(entity);
             }
@@ -87,6 +88,7 @@ namespace IndividualProject.Application.Services
             }
 
             await _trackrepository.SaveAsync();
+            return Result.Success();
         }
 
         public async Task<Result> DeleteAsync(int id, CancellationToken ct)
