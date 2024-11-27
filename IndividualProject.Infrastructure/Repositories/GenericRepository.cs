@@ -71,6 +71,29 @@ namespace IndividualProject.Infrastructure.Repositories
         //    return entity;
         //}
 
+        public virtual async Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var result = await Include(include)
+                .Where(match)
+                .FirstOrDefaultAsync()
+                .ConfigureAwait(false);
+
+            return result;
+        }
+
+        public virtual async Task<TResult> FindAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
+            Expression<Func<TEntity, bool>> match,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null)
+        {
+            var result = Include(include)
+                .Where(match)
+                .Select(selector)
+                .FirstOrDefault();
+
+            return await Task.FromResult(result);
+        }
+
         public virtual void Update(TEntity entity)
         {
             entity = entity ?? throw new ArgumentNullException(nameof(entity));

@@ -11,6 +11,11 @@ namespace IndividualProject.Infrastructure.Interfaces
         Task<IEnumerable<TResult>> GetAllAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
             Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
         Task<IQueryable<TEntity>> GetAllAsync(Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
+        Task<TResult> FindAsync<TResult>(Expression<Func<TEntity, TResult>> selector,
+            Expression<Func<TEntity, bool>> match,
+            Func<IQueryable<TEntity>, IQueryable<TEntity>> include = null);
         Task AddAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
         int Save();
