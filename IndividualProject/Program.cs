@@ -20,6 +20,9 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IOfficeRoomRepository, OfficeRoomRepository>();
+
 builder.Services.AddScoped<IParkingSpotService, ParkingSpotService>();
 builder.Services.AddScoped<IParkingSpotRepository, ParkingSpotRepository>();
 

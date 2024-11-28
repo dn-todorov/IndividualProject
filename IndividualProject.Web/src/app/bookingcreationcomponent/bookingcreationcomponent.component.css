@@ -1,0 +1,11 @@
+.k-avatar {
+    margin-left: 80px;
+    font-size: 30px;
+  }
+  .example {
+    display: flex;
+    justify-content: center;
+  }
+  .k-form {
+    width: 240px;
+  }

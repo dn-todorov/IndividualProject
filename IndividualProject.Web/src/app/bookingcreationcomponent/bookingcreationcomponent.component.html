@@ -1,0 +1,55 @@
+<div class="example">
+    <form class="k-form k-form-md" [formGroup]="form">
+      <fieldset class="k-form-fieldset">
+        <legend class="k-form-legend">Booking Details</legend>
+
+        <kendo-formfield>
+          <kendo-label [for]="textbox" text="First Name"></kendo-label>
+          <kendo-textbox
+            formControlName="firstName"
+            [clearButton]="true"
+            #username
+            required
+          ></kendo-textbox>
+
+          <kendo-formhint>Your First Name</kendo-formhint>
+          <kendo-formerror>Error: Username is required</kendo-formerror>
+        </kendo-formfield>
+
+        <kendo-formfield>
+          <kendo-label [for]="textbox" text="Last Name"> </kendo-label>
+          <kendo-textbox
+            formControlName="lastName"
+            #username
+            required
+            [clearButton]="true"
+          ></kendo-textbox>
+
+          <kendo-formhint>Your Last Name</kendo-formhint>
+        </kendo-formfield>
+
+        <kendo-formfield>
+        <kendo-label text="Pick Parking Spot">
+          <kendo-dropdownlist [data]="" formControlName="parkingSpot"></kendo-dropdownlist>
+        </kendo-label>
+
+        
+        <kendo-label text="Pick Room">
+          <kendo-dropdownlist [data]="" formControlName="roomNumber"></kendo-dropdownlist>
+        </kendo-label>
+
+        <kendo-datepicker
+          formControlName="datePicker"
+          placeholder="Choose a date ..."
+        ></kendo-datepicker>
+      </kendo-formfield>
+
+        <div class="k-form-buttons">
+          <button kendoButton themeColor="primary" (click)="submit()">
+            Submit
+          </button>
+          <button kendoButton (click)="clearForm()">Clear</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
