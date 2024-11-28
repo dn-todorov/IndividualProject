@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualProject.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualProject.Common", "IndividualProject.Common\IndividualProject.Common.csproj", "{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "IndividualProject.Web", "IndividualProject.Web\IndividualProject.Web.esproj", "{2577DEEF-A9B3-4C2C-8045-57E4C3624996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,12 @@ Global
 		{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B614EC7-1272-40BA-A6D7-7E3A8A29D561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2577DEEF-A9B3-4C2C-8045-57E4C3624996}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

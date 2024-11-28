@@ -1,0 +1,30 @@
+<kendo-grid
+  [kendoGridBinding]="trackingData"
+  [filterable]="true"
+>
+  <kendo-grid-column
+    field="id"
+    title="ID"
+    [width]="40"
+    [filterable]="false">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="firstName" title="First Name" filter="text"></kendo-grid-column>
+  
+  <kendo-grid-column field="lastName" title="Last Name" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="teamName" title="Team" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="occupationDate" title="Date" format="yyyy/MM/dd" filter="date"></kendo-grid-column>
+
+  <kendo-grid-column field="roomName" title="Room Number" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="note" title="Notes" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="parkingArrivalTime" title="Parking Arrival Time" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="parkingDepartureTime" title="Parking Departure Time" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="spotName" title="Parking Spot Name" filter="text"></kendo-grid-column>
+
+</kendo-grid>

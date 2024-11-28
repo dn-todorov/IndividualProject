@@ -10,6 +10,7 @@ namespace IndividualProject.Application.Dtos.Tracks
         public DateOnly OccupationDate { get; set; }
         public TimeOnly? ParkingArrivalTime { get; set; }
         public TimeOnly? ParkingDepartureTime { get; set; }
+        public string Note { get; set; }
         public RoomResponseModel Room { get; set; }
         public EmployeeResponseModel Employee { get; set; }
         public ParkingSpotResponseModel ParkingSpot { get; set; }
