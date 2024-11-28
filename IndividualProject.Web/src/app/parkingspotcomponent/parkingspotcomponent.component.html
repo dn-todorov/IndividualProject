@@ -1,0 +1,20 @@
+<kendo-grid
+  [kendoGridBinding]="parkingSpot"
+  [filterable]="true"
+>
+  <kendo-grid-column
+    field="id"
+    title="ID"
+    [width]="40"
+    [filterable]="false">
+  </kendo-grid-column>
+
+  <kendo-grid-column field="firstName" title="First Name" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="lastName" title="Last Name" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="carBrand" title="Car Brand" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="registrationPlate" title="Registration Plate" filter="text"></kendo-grid-column>
+  
+</kendo-grid>

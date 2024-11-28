@@ -11,7 +11,6 @@ import { OfficeBookingcomponentComponent } from './officebookingcomponent/office
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TrackingappbarComponent } from './trackingappbar/trackingappbar.component';
-import { KENDO_NAVIGATION } from '@progress/kendo-angular-navigation';
 
 
 import { LayoutModule } from "@progress/kendo-angular-layout";
@@ -20,10 +19,12 @@ import { IconsModule } from "@progress/kendo-angular-icons";
 import { NavigationModule } from "@progress/kendo-angular-navigation";
 
 import { ButtonsModule } from "@progress/kendo-angular-buttons";
+import { ParkingspotcomponentComponent } from './parkingspotcomponent/parkingspotcomponent.component';
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent,OfficeBookingcomponentComponent, TrackingappbarComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, CommonModule, GridModule, AppRoutingModule, HttpClientModule, LayoutModule, IndicatorsModule, IconsModule, NavigationModule,ButtonsModule],
+  declarations: [AppComponent,OfficeBookingcomponentComponent, TrackingappbarComponent, ParkingspotcomponentComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, CommonModule, GridModule, AppRoutingModule, HttpClientModule, 
+    LayoutModule, IndicatorsModule, IconsModule, NavigationModule, ButtonsModule],
 })
 export class AppModule {}

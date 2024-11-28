@@ -29,9 +29,12 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct)
         {
-            throw new NotImplementedException();
+            var result = await _employeeRepository.GetAllAsync(x => x.Include(x => x.Car));
+
+            var temp = _mapper.Map<IEnumerable<EmployeeWithCarResponseModel>>(result.ToList());
+            return ResultT<EmployeeWithCarResponseModel>.Success(temp);
         }
 
         public async Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id, CancellationToken ct)
