@@ -23,15 +23,20 @@ import { ParkingspotcomponentComponent } from './parkingspotcomponent/parkingspo
 import { BookingcreationcomponentComponent } from './bookingcreationcomponent/bookingcreationcomponent.component';
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+import { DateInputsModule, DatePickerModule, TimePickerModule } from "@progress/kendo-angular-dateinputs";
 import { LabelModule } from "@progress/kendo-angular-label";
 import { InputsModule } from "@progress/kendo-angular-inputs";
 import { DropDownListComponent } from '@progress/kendo-angular-dropdowns';
+
+import { IntlModule } from "@progress/kendo-angular-intl";
+import { FormFieldModule } from "@progress/kendo-angular-inputs";
+
 
 @NgModule({
   bootstrap: [AppComponent],
   declarations: [AppComponent,OfficeBookingcomponentComponent, TrackingappbarComponent, ParkingspotcomponentComponent, BookingcreationcomponentComponent],
   imports: [BrowserModule, BrowserAnimationsModule, CommonModule, GridModule, AppRoutingModule, HttpClientModule, 
-    LayoutModule, IndicatorsModule, IconsModule, NavigationModule, ButtonsModule, FormsModule, ReactiveFormsModule, DateInputsModule, LabelModule, InputsModule, DropDownListComponent],
+    LayoutModule, IndicatorsModule, IconsModule, NavigationModule, ButtonsModule, FormsModule, ReactiveFormsModule, DateInputsModule,
+     LabelModule, InputsModule, DropDownListComponent, DatePickerModule,IntlModule,FormFieldModule, TimePickerModule],
 })
 export class AppModule {}

@@ -16,6 +16,15 @@ builder.Services.AddDbContext<IndividualProjectDbContext>(options =>
     options.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder => builder
+    .WithOrigins("http://localhost:54906")
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+});
+
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddControllers();
@@ -55,8 +64,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(options =>
-     options.WithOrigins("http://localhost:54906"));
+//app.UseCors(options =>
+//     options.WithOrigins("http://localhost:54906"));
+
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 

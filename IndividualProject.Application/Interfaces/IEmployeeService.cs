@@ -6,6 +6,7 @@ namespace IndividualProject.Application.Interfaces
 {
     public interface IEmployeeService
     {
+        Task<ResultT<IEnumerable<EmployeeResponseModel>>> SearchAsync(string querry);
         Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct);
 
         Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id, CancellationToken ct);

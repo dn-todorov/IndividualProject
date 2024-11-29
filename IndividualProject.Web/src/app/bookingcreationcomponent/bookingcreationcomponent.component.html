@@ -1,9 +1,9 @@
 <div class="example">
-    <form class="k-form k-form-md" [formGroup]="form">
+    <form class="k-form k-form-md" [formGroup]="myForm">
       <fieldset class="k-form-fieldset">
         <legend class="k-form-legend">Booking Details</legend>
 
-        <kendo-formfield>
+        <!-- <kendo-formfield>
           <kendo-label [for]="textbox" text="First Name"></kendo-label>
           <kendo-textbox
             formControlName="firstName"
@@ -13,10 +13,10 @@
           ></kendo-textbox>
 
           <kendo-formhint>Your First Name</kendo-formhint>
-          <kendo-formerror>Error: Username is required</kendo-formerror>
-        </kendo-formfield>
+        </kendo-formfield> -->
+        <!-- <kendo-formerror>Error: Username is required</kendo-formerror> -->
 
-        <kendo-formfield>
+        <!-- <kendo-formfield>
           <kendo-label [for]="textbox" text="Last Name"> </kendo-label>
           <kendo-textbox
             formControlName="lastName"
@@ -26,23 +26,86 @@
           ></kendo-textbox>
 
           <kendo-formhint>Your Last Name</kendo-formhint>
-        </kendo-formfield>
+        </kendo-formfield> -->
 
         <kendo-formfield>
-        <kendo-label text="Pick Parking Spot">
-          <kendo-dropdownlist [data]="" formControlName="parkingSpot"></kendo-dropdownlist>
-        </kendo-label>
+          <kendo-label for="employeeID" text="Employee Name">
+            <kendo-dropdownlist 
+            required 
+            [data]="employeeData" 
+            [valueField]="'id'" 
+            [textField]="'fullName'" 
+            id="employeeID"
+            formControlName="employeeID"></kendo-dropdownlist>
+          </kendo-label>
+        </kendo-formfield>
 
-        
-        <kendo-label text="Pick Room">
-          <kendo-dropdownlist [data]="" formControlName="roomNumber"></kendo-dropdownlist>
+      <kendo-formfield>
+        <kendo-label for="parkingSpotID" text="Pick Parking Spot">
+          <kendo-dropdownlist 
+          required 
+          [data]="parkingData" 
+          [valueField]="'id'" 
+          [textField]="'spotName'" 
+          id = "parkingSpotID"
+          formControlName="parkingSpotID"></kendo-dropdownlist>
         </kendo-label>
-
-        <kendo-datepicker
-          formControlName="datePicker"
-          placeholder="Choose a date ..."
-        ></kendo-datepicker>
       </kendo-formfield>
+
+      <kendo-formfield>
+        <kendo-label for="parkingArrivalTime" text="Parking Arrival Time">
+          <kendo-timepicker
+          id="parkingArrivalTime"
+          formControlName="parkingArrivalTime"></kendo-timepicker>
+        </kendo-label>
+      </kendo-formfield>
+
+      <kendo-formfield>
+        <kendo-label for="parkingDepartureTime" text="Parking Departure Time">
+          <kendo-timepicker
+          id="parkingDepartureTime"
+          formControlName="parkingDepartureTime"></kendo-timepicker>
+        </kendo-label>
+      </kendo-formfield>
+      
+      <kendo-formfield>
+        <!-- [valueField]="id"[for]="textbox" [valuePrimitive]="true"-->
+        <kendo-label for="officeRoomID" text="Pick Room">
+          <kendo-dropdownlist
+          required
+          [data]="roomData"
+          [valueField]="'id'"
+          [textField]="'roomName'"
+          id = "officeRoomID"
+          formControlName="officeRoomID"></kendo-dropdownlist>
+        </kendo-label>
+      </kendo-formfield>
+
+      <kendo-formfield>
+        <kendo-label for="'occupationDate'" text="Pick a Date">
+          <kendo-datepicker
+            required
+            id="occupationDate"
+            [value] = "selectedDate"
+            formControlName="occupationDate"
+            placeholder="Choose a date ..."
+          ></kendo-datepicker>
+        </kendo-label>
+      </kendo-formfield>
+
+      <kendo-formfield>
+        <kendo-label for="note" text="Note"> </kendo-label>
+        <kendo-textbox
+          formControlName="note"
+          #username
+          id="note"
+          required
+          [clearButton]="true"
+        ></kendo-textbox>
+
+        <kendo-formhint>Note</kendo-formhint>
+      </kendo-formfield>
+
 
         <div class="k-form-buttons">
           <button kendoButton themeColor="primary" (click)="submit()">

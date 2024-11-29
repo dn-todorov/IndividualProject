@@ -29,6 +29,23 @@ namespace IndividualProject.Application.Services
             throw new NotImplementedException();
         }
 
+        public async Task<ResultT<IEnumerable<EmployeeResponseModel>>> SearchAsync(string querry)
+        {
+            var querryParts = querry.Split(' ');
+            string firstName = querryParts[0];
+            string lastName = querryParts.Length > 1 ? querryParts[1] : string.Empty;
+
+            var result = await _employeeRepository
+                .GetAllAsync(x => x.Include(x => x.Team));
+
+            var mappedToList = _mapper.Map<IEnumerable<EmployeeResponseModel>>(result.ToList());
+
+            var querryed = mappedToList
+                .Where(x => x.FirstName.Contains(firstName, StringComparison.OrdinalIgnoreCase)
+                && x.LastName.Contains(lastName, StringComparison.OrdinalIgnoreCase));
+            return ResultT<EmployeeResponseModel>.Success(querryed);
+        }
+
         public async Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct)
         {
             var result = await _employeeRepository.GetAllAsync(x => x.Include(x => x.Car));
