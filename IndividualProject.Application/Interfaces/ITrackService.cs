@@ -7,12 +7,12 @@ namespace IndividualProject.Application.Interfaces
     {
         Task<ResultT<IEnumerable<TracksResponseModel>>> SearchAsync(string querry);
 
-        Task<ResultT<IEnumerable<TracksResponseModel>>> GetAsync(CancellationToken ct);
+        Task<ResultT<IEnumerable<TracksResponseModel>>> GetAsync();
 
-        Task<ResultT<TracksResponseModel>> GetByIdAsync(int id, CancellationToken ct);
+        Task<ResultT<TracksResponseModel>> GetByIdAsync(int id);
 
-        Task<Result> CreateOrUpdateAsync(int? id, TracksRequestModel model, CancellationToken ct);
+        Task<Result> CreateOrUpdateAsync(int? id, TracksRequestModel model);
 
-        Task<Result> DeleteAsync(int id, CancellationToken ct);
+        Task<Result> DeleteAsync(int id);
     }
 }

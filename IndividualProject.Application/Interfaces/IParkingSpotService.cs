@@ -5,6 +5,6 @@ namespace IndividualProject.Application.Interfaces
 {
     public interface IParkingSpotService
     {
-        Task<ResultT<IEnumerable<ParkingSpotResponseModel>>> GetAsync(CancellationToken ct);
+        Task<ResultT<IEnumerable<ParkingSpotResponseModel>>> GetAsync();
     }
 }

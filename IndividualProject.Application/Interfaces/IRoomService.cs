@@ -5,6 +5,6 @@ namespace IndividualProject.Application.Interfaces
 {
     public interface IRoomService
     {
-        Task<ResultT<IEnumerable<RoomResponseModel>>> GetAsync(CancellationToken ct);
+        Task<ResultT<IEnumerable<RoomResponseModel>>> GetAsync();
     }
 }

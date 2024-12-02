@@ -11,12 +11,12 @@ namespace IndividualProject.Application.Errors
             Error.Conflict("Tracking.Conflict", $"Tracking with ID: {id} already exists.");
 
         public static Error CreateFailure =>
-            Error.Failure("Tracking.CreateFailure", $"Something went wrong in creating configuration");
+            Error.Failure("Tracking.CreateFailure", $"Something went wrong in creating tracks");
 
         public static Error Updatefailure =>
-            Error.Failure("Tracking.UpdateFailure", $"Something went wrong in updating configuration");
+            Error.Failure("Tracking.UpdateFailure", $"Something went wrong in updating tracks");
 
         public static Error DeleteFailure =>
-            Error.Failure("Tracking.DeleteFailure", $"Something went wrong in deleting configuration");
+            Error.Failure("Tracking.DeleteFailure", $"Something went wrong in deleting tracks");
     }
 }

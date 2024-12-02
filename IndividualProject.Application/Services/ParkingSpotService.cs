@@ -17,7 +17,7 @@ namespace IndividualProject.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<ResultT<IEnumerable<ParkingSpotResponseModel>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<ParkingSpotResponseModel>>> GetAsync()
         {
             var result = await _pakingSpotRepository.GetAllAsync();
 

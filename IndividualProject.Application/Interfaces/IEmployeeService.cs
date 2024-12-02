@@ -1,20 +1,17 @@
 ﻿using IndividualProject.Application.Dtos.Employees;
 using IndividualProject.Common.ResultPattern;
-using IndividualProject.Domain.Entities;
 
 namespace IndividualProject.Application.Interfaces
 {
     public interface IEmployeeService
     {
         Task<ResultT<IEnumerable<EmployeeResponseModel>>> SearchAsync(string querry);
-        Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct);
+        Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync();
 
-        Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id, CancellationToken ct);
+        Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id);
 
-        Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct);
+        Task<Result> CreateOrUpdateAsync(int? id, EmployeeRequestModel model);
 
-        Task<Result> UpdateAsync(int id, Team request, CancellationToken ct);
-
-        Task<Result> DeleteAsync(int id, CancellationToken ct);
+        Task<Result> DeleteAsync(int id);
     }
 }

@@ -9,17 +9,17 @@ namespace IndividualProject.Controllers
     public class TrackController(ITrackService trackService) : BaseController
     {
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id, CancellationToken ct)
+        public async Task<IActionResult> GetById(int id)
         {
-            var result = await trackService.GetByIdAsync(id, ct);
+            var result = await trackService.GetByIdAsync(id);
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync(CancellationToken ct)
+        public async Task<IActionResult> GetAllAsync()
         {
-            var result = await trackService.GetAsync(ct);
+            var result = await trackService.GetAsync();
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
@@ -33,27 +33,28 @@ namespace IndividualProject.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> Create([FromBody] TracksRequestModel model, CancellationToken ct)
+        public async Task<IActionResult> Create([FromBody] TracksRequestModel model)
         {
-            var result = await trackService.CreateOrUpdateAsync(null, model, ct);
+            var result = await trackService.CreateOrUpdateAsync(null, model);
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
 
         [HttpPut("update{id:int}")]
-        public async Task<IActionResult> Update([FromRoute] int? id, [FromBody] TracksRequestModel model, CancellationToken ct)
+        public async Task<IActionResult> Update([FromRoute] int? id, [FromBody] TracksRequestModel model)
         {
-            var result = await trackService.CreateOrUpdateAsync(id, model, ct);
+            var result = await trackService.CreateOrUpdateAsync(id, model);
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
 
         [HttpDelete("delete{id:int}")]
-        public async Task<IActionResult> Delete([FromRoute] int id, CancellationToken ct)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var result = await trackService.DeleteAsync(id, ct);
+            var result = await trackService.DeleteAsync(id);
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
+
     }
 }

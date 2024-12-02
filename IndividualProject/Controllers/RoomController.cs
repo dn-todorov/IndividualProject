@@ -8,9 +8,9 @@ namespace IndividualProject.Controllers
     public class RoomController(IRoomService roomService) : BaseController
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync(CancellationToken ct)
+        public async Task<IActionResult> GetAllAsync()
         {
-            var result = await roomService.GetAsync(ct);
+            var result = await roomService.GetAsync();
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }

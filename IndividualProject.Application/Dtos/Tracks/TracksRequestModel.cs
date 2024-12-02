@@ -2,7 +2,6 @@
 {
     public class TracksRequestModel
     {
-        //Get rid of ID
         public int Id { get; set; }
         public DateOnly OccupationDate { get; set; }
         public TimeOnly? ParkingArrivalTime { get; set; }

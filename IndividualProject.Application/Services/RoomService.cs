@@ -17,7 +17,7 @@ namespace IndividualProject.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<ResultT<IEnumerable<RoomResponseModel>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<RoomResponseModel>>> GetAsync()
         {
             var result = await _roomRepository.GetAllAsync();
 

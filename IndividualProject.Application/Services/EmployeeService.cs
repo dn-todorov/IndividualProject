@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using IndividualProject.Application.Dtos.Employees;
+using IndividualProject.Application.Errors;
 using IndividualProject.Application.Interfaces;
 using IndividualProject.Common.ResultPattern;
 using IndividualProject.Domain.Entities;
@@ -18,15 +19,52 @@ namespace IndividualProject.Application.Services
             _employeeRepository = employeeRepository;
             _mapper = mapper;
         }
-
-        public Task<ResultT<Team>> AddAsync(Team request, CancellationToken ct)
+        public async Task<Result> CreateOrUpdateAsync(int? id, EmployeeRequestModel model)
         {
-            throw new NotImplementedException();
+            Employee entity = null;
+
+            if (id != null)
+            {
+                entity = await _employeeRepository
+                    .FindAsync(x => x.Id == id);
+                model.Id = (int)entity.Id;
+            }
+
+            entity = _mapper.Map<Employee>(model);
+
+            if (entity?.Id != null && id != null)
+            {
+                _employeeRepository.Update(entity);
+            }
+            else
+            {
+                await _employeeRepository.AddAsync(entity);
+            }
+
+            await _employeeRepository.SaveAsync();
+            return Result.Success();
         }
 
-        public Task<Result> DeleteAsync(int id, CancellationToken ct)
+        public async Task<Result> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            if (id == null)
+            {
+                return EmployeeErrors.NotFound(id.ToString());
+            }
+
+            var result = await _employeeRepository.FindAsync(x => x.Id == id);
+
+            if (result != null)
+            {
+                await _employeeRepository.DeleteAsync(result);
+                await _employeeRepository.SaveAsync();
+            }
+            else
+            {
+                return EmployeeErrors.NotFound(id.ToString());
+            }
+
+            return Result.Success();
         }
 
         public async Task<ResultT<IEnumerable<EmployeeResponseModel>>> SearchAsync(string querry)
@@ -46,7 +84,7 @@ namespace IndividualProject.Application.Services
             return ResultT<EmployeeResponseModel>.Success(querryed);
         }
 
-        public async Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync(CancellationToken ct)
+        public async Task<ResultT<IEnumerable<EmployeeWithCarResponseModel>>> GetAsync()
         {
             var result = await _employeeRepository.GetAllAsync(x => x.Include(x => x.Car));
 
@@ -54,7 +92,7 @@ namespace IndividualProject.Application.Services
             return ResultT<EmployeeWithCarResponseModel>.Success(temp);
         }
 
-        public async Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id, CancellationToken ct)
+        public async Task<ResultT<EmployeeWithCarResponseModel>> GetByIdAsync(int id)
         {
             var result = await _employeeRepository
                 .GetAsync(id
@@ -64,9 +102,5 @@ namespace IndividualProject.Application.Services
             return ResultT<EmployeeWithCarResponseModel>.Success(temp);
         }
 
-        public Task<Result> UpdateAsync(int id, Team request, CancellationToken ct)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

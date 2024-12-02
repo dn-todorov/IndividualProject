@@ -8,9 +8,9 @@ namespace IndividualProject.Controllers
     public class ParkingController(IParkingSpotService parkingSpot) : BaseController
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync(CancellationToken ct)
+        public async Task<IActionResult> GetAllAsync()
         {
-            var result = await parkingSpot.GetAsync(ct);
+            var result = await parkingSpot.GetAsync();
 
             return result.Match(onSuccess: Ok, onFailure: Problem);
         }
