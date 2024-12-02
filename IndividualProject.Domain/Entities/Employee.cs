@@ -7,7 +7,7 @@
         public int TeamID { get; set; }
         public Team Team { get; set; }
         public int? CarID { get; set; }
-        public Car Car { get; set; }
+        public Car? Car { get; set; }
         public ICollection<Track> Tracks { get; set; } = new List<Track>();
 
     }

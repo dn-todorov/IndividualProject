@@ -29,6 +29,9 @@ namespace IndividualProject.Application.Services
                 .ForPath(x => x.Team, x => x.MapFrom(x => x.Team))
                 .ReverseMap();
 
+            CreateMap<EmployeeRequestModel, Employee>()
+                .ReverseMap();
+
             CreateMap<Track, TracksResponseModel>()
                 .ForPath(x => x.Employee, x => x.MapFrom(x => x.Employee))
                 .ForPath(x => x.ParkingSpot, x => x.MapFrom(x => x.ParkingSpot))
